@@ -1,0 +1,113 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    font-family: "Poppins", sans-serif;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: #2cccff;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    width: 60%;
+}
+
+textarea {
+    font-size: 2rem;
+    width: 30%;
+}
+
+p {
+    text-align: center;
+    line-height: 1.3;
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.list-item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.list-item span {
+    font-size: 2rem;
+    text-align: center;
+    display: block;
+    background: #ccc;
+    padding: 10px 35px;
+    border-radius: 20px;
+}
+span.active.select {
+    background-color: red;
+}
+
+span.active {
+    background-color: #6a5af9;
+}
+
+.btn {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    font-size: 2rem;
+    user-select: none;
+    position: relative;
+    margin: 30px 30px 16px;
+    padding: 18px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    -webkit-box-shadow: 0 0 20px #eee;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    cursor: pointer;
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(#f6d365),
+        color-stop(51%, #fda085),
+        to(#f6d365)
+    );
+    background-image: -o-linear-gradient(left, #f6d365 0%, #fda085 51%, #f6d365 100%);
+    background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%);
+}
+
+.btn:hover {
+    background-position: right center;
+}
+
+.group-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.error.active {
+    color: red;
+    font-size: 3rem;
+    margin-top: 20px;
+    /* font-weight: 500; */
+    display: block;
+}
+
+.error {
+    display: none;
+}
